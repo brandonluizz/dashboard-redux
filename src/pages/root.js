@@ -1,6 +1,7 @@
 import React from 'react'
+import './root.css'
 import Header from '../components/Header'
-import Routes from './routes';
+import Routes from './routes'
 import {
     Container
 } from 'reactstrap'
@@ -9,7 +10,7 @@ export default props => (
     <div>
         <div className="App">
             <Header />
-            <Container style={{ marginTop: '10px'}}>
+            <Container className="customContainer">
                 <Routes />
             </Container>
         </div>

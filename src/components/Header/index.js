@@ -1,32 +1,34 @@
-import React from 'react';
+import React from 'react'
 import {
   Navbar,
   NavbarToggler,
   NavbarBrand,
-} from 'reactstrap';
+} from 'reactstrap'
 
 export default class Header extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.toggle = this.toggle.bind(this);
+    this.toggle = this.toggle.bind(this)
     this.state = {
       isOpen: false
-    };
+    }
   }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
-    });
+    })
   }
+
   render() {
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="#/">Dashboard Redux</NavbarBrand>
+          <NavbarBrand href="#/">Simple Dashboard Redux</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
         </Navbar>
       </div>
-    );
+    )
   }
 }
